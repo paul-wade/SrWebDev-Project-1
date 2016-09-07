@@ -6,6 +6,6 @@ var should = chai.should();
 describe('test', function () {
     it('should do somthing', function () {
         var test ="test";
-        test.should.equal("tewst");
+        test.should.equal("test");
     });
 });
