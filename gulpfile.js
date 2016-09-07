@@ -20,7 +20,9 @@ gulp.task('styleSheets', function () {
 });
 
 gulp.task('vendor', function () {
-    return gulp.src('node_modules/bootstrap/dist/css/bootstrap.min.css')
+    return gulp.src(['node_modules/bootstrap/dist/css/bootstrap.min.css',
+        'node_modules/bootstrap/dist/css/bootstrap-theme.css',
+        'node_modules/bootstrap/dist/js/bootstrap.js'])
         .pipe(gulp.dest('dist'));
 });
 

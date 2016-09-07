@@ -1,18 +1,25 @@
-link(rel="stylesheet", href="bootstrap.min.css")
+head
+    link(rel="stylesheet", href="bootstrap.min.css")
+    link(rel="stylesheet", href="bootstrap-theme.css")
+    link(rel="stylesheet", href="styles.css")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+body
+    nav.navbar.navbar-default
+        a.navbar-brand
+            | Project 1
+        ul.nav.navbar-nav
+            li.nav-item
+                a.nav-link(href="index.html")
+                    | Home
+            li.nav-item
+                a.nav-link(href="register.html")
+                    | Register
+            li.nav-item
+                a.nav-link(href="createevent.html")
+                    | Create Event
+    .container-fluid
+        .row
+            block content
 
-nav.navbar.navbar-default
-    a.navbar-brand
-        | Sr Web Dev Project 1
-    ul.nav.navbar-nav
-        li.nav-item
-            a.nav-link(href="index.html")
-                | Home
-        li.nav-item
-            a.nav-link(href="register.html")
-                | Register
-        li.nav-item
-            a.nav-link(href="createevent.html")
-                | Create Event
-
-.container
-    block content
+    script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+    script(type="text/javascript" src="bootstrap.js")

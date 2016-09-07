@@ -1,10 +1,16 @@
 extends layout.pug
 
 block content
-    form
-        h1 Create an Account
-            fieldset
-                legend Required Information
-                label
+    form.form-horizontal
+        fieldset
+            legend Required Information
+            .form-group
+                label(for="inputName").col-sm-2.control-label
                     | Name
-                    input(type="text" required)
+                .col-sm-10
+                    input(type="text" id="inputName" required).form-control
+            .form-group
+                label(for="inputEmail").col-sm-2.control-label.col-sm-2.control-label
+                    | Email
+                .col-sm-10
+                    input(type="email" id="inputEmail" required).form-control
