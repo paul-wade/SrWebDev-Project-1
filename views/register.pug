@@ -1,16 +1,40 @@
 extends layout.pug
 
 block content
-    form.form-horizontal
-        fieldset
-            legend Required Information
-            .form-group
-                label(for="inputName").col-sm-2.control-label
-                    | Name
-                .col-sm-10
-                    input(type="text" id="inputName" required).form-control
-            .form-group
-                label(for="inputEmail").col-sm-2.control-label.col-sm-2.control-label
-                    | Email
-                .col-sm-10
-                    input(type="email" id="inputEmail" required).form-control
+    .col-md-2
+    .col-md-8
+        form.form-horizontal
+            fieldset
+                legend Sign up for a new account
+                .form-group
+                    label(for="inputName").col-sm-2.control-label
+                        | Name
+                    .col-sm-10
+                        input(type="text" id="inputName" placeholder="john doe" required).form-control
+                .form-group
+                    label(for="inputEmail").col-sm-2.control-label.col-sm-2.control-label
+                        | Email
+                    .col-sm-10
+                        input(type="email" id="inputEmail" placeholder="example@example.com" required).form-control
+                .form-group
+                    label(for="inputPassword").col-sm-2.control-label.col-sm-2.control-label
+                        | Password
+                    .col-sm-10
+                        input(type="password" id="inputPassword" pattern="(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required).form-control
+                        ul.fa-ul
+                            li
+                                i.fa-li.fa.fa-times.Invalid(id="promptSixChar")
+                                | At least 6 characters long.
+                            li
+                                i.fa-li.fa.fa-times.Invalid(id="promptUpper")
+                                | Has an Upper case letter.
+                            li
+                                i.fa-li.fa.fa-times.Invalid(id="promptLower")
+                                | Has a lower case letter.
+                            li
+                                i.fa-li.fa.fa-times.Invalid(id="promptNumber")
+                                | Must Contain at least one number.
+            button(type="submit")
+                | Register
+    .col-md-2
+
