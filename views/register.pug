@@ -34,7 +34,23 @@ block content
                             li
                                 i.fa-li.fa.fa-times.Invalid(id="promptNumber")
                                 | Must Contain at least one number.
-            button(type="submit")
+            fieldset
+                legend Optional (but helpful fields)
+                .form-group
+                    label(for="inputBirthDate").col-sm-2.control-label
+                        | Date of Birth
+                    .col-sm-10
+                        input(type="date" id="inputBirthDate" placeholder="MM/DD/YYYY").form-control
+                .form-group
+                    label(for="inputEmployer").col-sm-2.control-label
+                        | Employer
+                    .col-sm-10
+                        input(type="text" id="inputEmployer" placeholder="Company Name").form-control
+                .form-group
+                    label(for="inputJobTitle").col-sm-2.control-label
+                        | Job Title
+                    .col-sm-10
+                        input(type="text" id="inputJobTitle" placeholder="Company Name").form-control
+            button.pull-right.btn.btn-default(type="submit")
                 | Register
     .col-md-2
-

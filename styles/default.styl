@@ -1,9 +1,31 @@
-.container
-  margin-left: 30px;
-  margin-right: 30px;
+$company-main-color = #5DF174
+$company-accent-color = #70F9D2
 
+body
+  margin-top 60px
 
 .Invalid
-  color:red
+  color red
+
 .Valid
-  color:green;
+  color green
+
+legend
+  border-bottom 1px solid $company-accent-color
+
+.navbar-branded
+  background-color $company-main-color
+
+.navbar
+  border-radius 0px
+  border-width 0px
+
+a
+  &.nav-link
+    color #787878
+  &.navbar-brand
+    color#fff
+    font-weightbold
+
+.bottom-push
+  margin-bottom 30px
