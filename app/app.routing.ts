@@ -1,7 +1,7 @@
 import {ModuleWithProviders} from "@angular/core";
 import {Routes, RouterModule} from "@angular/router";
-import {registerComponent} from "./register.component";
-import {eventListComponent} from "./event-list.component";
+import {registerComponent} from "./register/register.component";
+import {eventListComponent} from "./event-list/event-list.component";
 
 const appRoutes: Routes = [
     {path: 'register', component: registerComponent},

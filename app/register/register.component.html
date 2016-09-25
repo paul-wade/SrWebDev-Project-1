@@ -1,0 +1,12 @@
+<h2>this is from register comp</h2>
+<form role="form" (ng-submit)="submit(form.value)">
+    <input type="text" placeholder="Enter your name" ng-control="name">
+    <input type="text" placeholder="Enter your email" ng-control="email">
+    <h3>Languages</h3>
+    <input type="checkbox" ng-control="javascript">JavaScript
+    <input type="checkbox" ng-control="ruby">Ruby
+    <input type="checkbox" ng-control="php">PHP
+    <br/>
+    <button>Submit</button>
+</form>
+<button (click)="getUser()">Get User</button>
