@@ -16,4 +16,10 @@ $(document).ready(function () {
         isPasswordPartValid($('#promptLower'), password, "[a-z]");
         isPasswordPartValid($('#promptNumber'), password, "[0-9]");
     });
+
+
 });
+
+function saveUser(formdata){
+
+}

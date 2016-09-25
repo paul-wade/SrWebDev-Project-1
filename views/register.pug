@@ -3,7 +3,7 @@ extends layout.pug
 block content
     .col-md-2
     .col-md-8
-        form.form-horizontal
+        form.form-horizontal(action="javascript:saveUser(); return false;")
             fieldset
                 legend Sign up for a new account
                 .form-group
@@ -51,6 +51,6 @@ block content
                         | Job Title
                     .col-sm-10
                         input(type="text" id="inputJobTitle" placeholder="Company Name").form-control
-            button.pull-right.btn.btn-default(type="submit")
+            button.pull-right.btn.btn-default(type="submit" id="btnRegister")
                 | Register
     .col-md-2
